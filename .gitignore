@@ -29,4 +29,4 @@ frontend/.env
 
 backend/.env
 backend/env
-*/_pycahe_
+*/__pycahe__
