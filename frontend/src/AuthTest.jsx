@@ -27,7 +27,7 @@ export default function AuthTest() {
 
       const token = await getToken();
       console.log(token)
-      const res = await axios.post("http://127.0.0.1:8000/api/cart/",formData, {
+      const res = await axios.get("http://127.0.0.1:8000/api/clerk-auth/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

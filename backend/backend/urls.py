@@ -23,6 +23,6 @@ from razor import urls as razorurls
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/",include(apiurls)),
-    path("api/",include(razorurls)),
+    path("",include(razorurls)),
     
 ]

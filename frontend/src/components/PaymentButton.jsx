@@ -1,5 +1,5 @@
 import axios from "axios";
-import { loadRazorpay } from "./utils/razorpay";
+import { loadRazorpay } from "../utils/razorpay";
 import { useAuth } from "@clerk/clerk-react";
 
 const PaymentButton = ({ amount }) => {

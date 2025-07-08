@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut, SignIn, SignUp, RedirectToSignIn } from "@clerk/clerk-react";
 import AuthTest from "./AuthTest";
-import ProductForm from "./ProductForm";
+import PaymentButton from "./components/PaymentButton";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <SignedIn>
         <div>Welcome! You are signed in.</div>
         <AuthTest/>
+        <PaymentButton amount={5000} />
       </SignedIn>
       <SignedOut>
         <RedirectToSignIn />
