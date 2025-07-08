@@ -1,5 +1,7 @@
 import { SignedIn, SignedOut, SignIn, SignUp, RedirectToSignIn } from "@clerk/clerk-react";
 import AuthTest from "./AuthTest";
+import ProductForm from "./ProductForm";
+
 function App() {
   return (
     <>

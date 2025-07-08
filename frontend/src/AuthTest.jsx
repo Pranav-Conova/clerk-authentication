@@ -20,9 +20,14 @@ export default function AuthTest() {
   // };
   useEffect(() => {
     async function callApi() {
+      const formData = new FormData()
+      formData.append("product_id",5);
+      formData.append("size ","M");
+      formData.append("quantity",1);
+
       const token = await getToken();
       console.log(token)
-      const res = await axios.get("http://127.0.0.1:8000/api/clerk-auth/", {
+      const res = await axios.post("http://127.0.0.1:8000/api/cart/",formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
